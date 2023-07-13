@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -o $(echo "$CFILE" | sed "s/.$/o/") -Wall -Werror -Wextra -pedantic -std=gnu89
+gcc -c $CFILE -o $(echo "$CFILE" | sed "s/.$/o/")
