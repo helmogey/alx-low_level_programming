@@ -13,7 +13,7 @@ int main(void)
 {
 		putchar(letter);
 		letter++;
-		count++
+		count++;
 }
 	return (0);
 }
