@@ -15,6 +15,14 @@ int main(void)
 		letter++;
 		count++;
 }
+	letter = 'A';
+	count = 0;
+	while (count < 26)
+{
+		putchar(letter);
+		letter++;
+		count++;
+}
 	putchar('\n');
 	return (0);
 }
