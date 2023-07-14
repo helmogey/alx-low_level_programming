@@ -33,7 +33,6 @@ int main(void)
 		print_number(count);
 		count++;
 }
-	putchar('\n');
 	return (0);
 }
 
