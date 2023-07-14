@@ -12,7 +12,7 @@ int main(void)
 	while (i < 10)
 {
 		j = 0;
-		while ( j < 10)
+		while (j < 10)
 {
 		if (i < j)
 {
