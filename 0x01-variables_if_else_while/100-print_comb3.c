@@ -9,10 +9,12 @@ int main(void)
 	int i = 0;
 	int j;
 
-	while (i < 9)
+	while (i < 10)
 {
 		j = 0;
 		while ( j < 10)
+{
+		if (i < j)
 {
 		putchar('0' + i);
 		putchar('0' + j);
@@ -20,6 +22,7 @@ int main(void)
 {
 		putchar(',');
 		putchar(' ');
+}
 }
 		j++;
 }
