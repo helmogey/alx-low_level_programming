@@ -10,8 +10,10 @@ int main(void)
 	int count = 0;
 
 	while (count < 26)
+{
 		putchar(letter);
 		letter++;
 		count++
+}
 	return (0);
 }
