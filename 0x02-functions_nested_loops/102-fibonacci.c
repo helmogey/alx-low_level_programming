@@ -9,7 +9,7 @@
 *Return: Always 0 (Success)
 */
 int main() {
-    longint a = 1, b = 2, c, i;
+    lon gint a = 1, b = 2, c, i;
 
     for (i = 1; i <= 50; ++i) {
         printf("%ld\n", a);
