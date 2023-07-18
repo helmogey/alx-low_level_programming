@@ -13,7 +13,7 @@ char c = 'a';
 int i = 0;
 while (i < 26)
 {
-_putchar('0'+c);
+_putchar(c);
 i++;
 c++;
 }
