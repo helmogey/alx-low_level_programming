@@ -5,6 +5,8 @@
 *@i: counter
 *Return: Always 0 (Success)
 */
+void _putchar(c);
+
 void print_alphabet(void)
 {
 char c = 'a';
