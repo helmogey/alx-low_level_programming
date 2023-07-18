@@ -340,7 +340,7 @@ void print_to_98(int n)
                 _putchar('0' + abs(i));
                 _putchar(',');
             }
-            else if (i < 0 && i > 10 & i < 100)
+            else if (i < 0 && i > 10 && i < 100)
             {
                 _putchar('-');
                 _putchar(' ');
@@ -348,7 +348,7 @@ void print_to_98(int n)
                 _putchar('0' + abs(i)%10);
                 _putchar(',');
             }
-            else if (i < 0 && i > 10 & i >= 100)
+            else if (i < 0 && i > 10 && i >= 100)
             {
                 _putchar('-');
                 _putchar(' ');
