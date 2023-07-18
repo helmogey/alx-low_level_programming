@@ -1,3 +1,4 @@
+#include <iostream>
 /**
 *print_alphabet - helper function
 *Description: 'print string'
@@ -5,7 +6,7 @@
 */
 void print_alphabet(void)
 {
-char* alpha = 'abcdefghijklmnopqrstuvwxyz';
+string alpha = 'abcdefghijklmnopqrstuvwxyz';
 
 _putchar(alpha);
 _putchar('\n');
