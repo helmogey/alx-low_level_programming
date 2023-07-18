@@ -131,7 +131,7 @@ int _abs(int n)
 
 
 /**
-*_abs - helper function
+*print_last_digit - helper function
 *Description: 'print string'
 *@n: input number
 *Return: Always 0 (Success)
@@ -230,4 +230,20 @@ void times_table(void)
 		_putchar('\n');
     }
     return;
+}
+
+
+
+
+
+/**
+*add - helper function
+*Description: 'print string'
+*@a: input first number
+*@b: input second number
+*Return: Always 0 (Success)
+*/
+int add(int a, int b)
+{
+	return (a + b);
 }
