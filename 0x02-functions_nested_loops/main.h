@@ -5,7 +5,7 @@
 */
 void print_alphabet(void)
 {
-string alpha = 'abcdefghijklmnopqrstuvwxyz';
+char alpha[64] = 'abcdefghijklmnopqrstuvwxyz';
 
 _putchar(alpha);
 _putchar('\n');
