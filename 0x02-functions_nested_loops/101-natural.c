@@ -16,6 +16,6 @@ if (i % 3 == 0 || i % 5 == 0)
 res = res + i;
 }
 }
-printf("%d", res);
+printf("%d\n", res);
 return (0);
 }
