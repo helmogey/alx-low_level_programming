@@ -1,5 +1,4 @@
 #include <ctype.h>
-#include <stdlib.h>
 /**
 *print_alphabet - helper function
 *Description: 'print string'
@@ -116,17 +115,4 @@ else
 	out = 0;
 }
 	return (out);
-}
-
-
-
-/**
-*_abs - helper function
-*Description: 'print string'
-*@n: input number
-*Return: Always 0 (Success)
-*/
-int _abs(int n)
-{
-	return (abs(n));
 }
