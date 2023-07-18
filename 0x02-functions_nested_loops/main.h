@@ -128,3 +128,15 @@ int _abs(int n)
 {
 	return (abs(n));
 }
+
+
+/**
+*_abs - helper function
+*Description: 'print string'
+*@n: input number
+*Return: Always 0 (Success)
+*/
+int print_last_digit(int n)
+{
+	return (abs(n) % 10);
+}
