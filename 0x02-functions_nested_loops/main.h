@@ -258,6 +258,8 @@ int add(int a, int b)
 */
 void print_to_98(int n)
 {
+	int i;
+	
 	if (n >= 0 && n < 10)
 	{
 		_putchar('0' + n);
@@ -282,7 +284,7 @@ void print_to_98(int n)
         _putchar('0' + abs(n) % 10);
         _putchar(',');
     }
-	for (int i = n + 1; i < 98; ++i)
+	for (i = n + 1; i < 98; ++i)
 	{
 		if (i >= 0 && i < 10)
 		{
