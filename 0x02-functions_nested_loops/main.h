@@ -171,3 +171,64 @@ void jack_bauer(void)
 }
 
 
+
+/**
+*times_table - helper function
+*Description: 'print string'
+*Return: Always 0 (Success)
+*/
+void times_table(void)
+{
+    int i;
+    int j;
+
+    for (i = 0; i < 10; i++)
+    {
+        _putchar('0');
+        _putchar(',');
+        for (j = 1; j < 10; j++)
+        {
+            if (i * j < 10)
+            {
+                if (j < 9)
+                {
+                    _putchar(' ');
+                    _putchar(' ');
+                    _putchar('0' + (i * j));
+                    _putchar(',');   
+                }
+                else
+                {
+                    _putchar(' ');
+                    _putchar(' ');
+                    _putchar('0' + (i * j));
+                }
+            }
+            else
+            {
+                if (j < 9)
+                {
+                    _putchar(' ');
+                    _putchar('0' + (i * j) / 10);
+                    _putchar('0' + (i * j) % 10);
+                    _putchar(',');
+                }
+                else if (i < 2)
+                {
+                    _putchar('0' + (i * j) / 10);
+                    _putchar('0' + (i * j) % 10);
+                }
+                else
+                {
+                    _putchar(' ');
+                    _putchar('0' + (i * j) / 10);
+                    _putchar('0' + (i * j) % 10);
+                }
+
+            }
+        }
+		_putchar('$');
+		_putchar('\n');
+    }
+    return;
+}
