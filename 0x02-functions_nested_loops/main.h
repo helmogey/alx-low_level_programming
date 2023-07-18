@@ -403,7 +403,7 @@ void print_times_table(int n)
 			_putchar(',');
 			for (j = 1; j <= n; j++)
 			{
-				if (i * j < 10)
+				if (i * j <= 10)
 				{
 					if (j < n)
 					{
@@ -421,7 +421,7 @@ void print_times_table(int n)
 						_putchar('0' + (i * j));
 					}
 				}
-				else if (i * j < 100)
+				else if (i * j <= 100)
 				{
 					if (j < n)
 					{
