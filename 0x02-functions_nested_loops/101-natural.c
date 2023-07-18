@@ -7,7 +7,7 @@
 int main(void)
 {
 int i;
-int res = 1;
+int res = 0;
 
 for (i = 0; i < 1024; ++i)
 {
