@@ -2,6 +2,7 @@
 /**
 *main - Entry point
 *Description: 'print string'
+*@c: charecter to be prented
 *Return: Always 0 (Success)
 */
 int _putchar(char c);
