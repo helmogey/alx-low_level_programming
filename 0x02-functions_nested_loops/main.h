@@ -1,3 +1,4 @@
+#include <ctype.h>
 /**
 *print_alphabet - helper function
 *Description: 'print string'
