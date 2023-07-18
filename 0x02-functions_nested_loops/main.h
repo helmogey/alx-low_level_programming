@@ -87,3 +87,32 @@ else
 return (out);
 }
 
+
+/**
+*print_sign - helper function
+*Description: 'print string'
+*@n: input number
+*@out: output to be saved
+*Return: Always 0 (Success)
+*/
+int print_sign(int n)
+{
+	int out;
+
+if (n > 0)
+{
+	_putchar('+');
+	out = 1;
+}
+else if (n < 0)
+{
+	_putchar('-');
+	out = -1; 
+}
+else
+{
+	_putchar('0');
+	out = 0;
+}
+	return (out);
+}
