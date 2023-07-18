@@ -259,30 +259,42 @@ int add(int a, int b)
 void print_to_98(int n)
 {
 	int i;
-	
+
 	if (n >= 0 && n < 10)
 	{
 		_putchar('0' + n);
-        _putchar(',');
+        if (n < 98)
+		{
+			_putchar(',');
+		}
 	}
 	else if (n >= 0 && n > 10)
 	{
 		_putchar('0' + n/10);
 		_putchar('0' + n%10);
-        _putchar(',');
+        if (n < 98)
+		{
+			_putchar(',');
+		}
 	}
     else if ( n < 0 && abs(n) < 10)
     {
         _putchar('-');
         _putchar('0' + abs(n));
-        _putchar(',');
+        if (n < 98)
+		{
+			_putchar(',');
+		}
     }
     else
     {
         _putchar('-');
         _putchar('0' + abs(n) / 10);
         _putchar('0' + abs(n) % 10);
-        _putchar(',');
+		if (n < 98)
+		{
+			_putchar(',');
+		}
     }
 	for (i = n + 1; i < 98; ++i)
 	{
@@ -290,21 +302,30 @@ void print_to_98(int n)
 		{
 			_putchar(' ');
 			_putchar('0' + i);
-            _putchar(',');
+            if (n < 98)
+			{
+				_putchar(',');
+			}
 		} 
 		else if (i >= 0 && i > 10)
 		{
 			_putchar(' ');
 			_putchar('0' + i/10);
 			_putchar('0' + i%10);
-            _putchar(',');
+            if (n < 98)
+			{
+				_putchar(',');
+			}
 		}
         else if (i < 0 && i < 10)
         {
             _putchar('-');
             _putchar(' ');
 			_putchar('0' + abs(i));
-            _putchar(',');
+            if (n < 98)
+			{
+				_putchar(',');
+			}
         }
         else
         {
@@ -312,7 +333,10 @@ void print_to_98(int n)
             _putchar(' ');
 			_putchar('0' + abs(i)/10);
 			_putchar('0' + abs(i)%10);
-            _putchar(',');
+            if (n < 98)
+			{
+				_putchar(',');
+			}
         }
 		
 	}
