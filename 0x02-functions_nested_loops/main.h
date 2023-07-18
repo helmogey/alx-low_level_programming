@@ -247,3 +247,74 @@ int add(int a, int b)
 {
 	return (a + b);
 }
+
+
+
+/**
+*print_to_98 - helper function
+*Description: 'print string'
+*@n: input number
+*Return: Always 0 (Success)
+*/
+void print_to_98(int n)
+{
+	if (n >= 0 && n < 10)
+	{
+		_putchar('0' + n);
+        _putchar(',');
+	}
+	else if (n >= 0 && n > 10)
+	{
+		_putchar('0' + n/10);
+		_putchar('0' + n%10);
+        _putchar(',');
+	}
+    else if ( n < 0 && abs(n) < 10)
+    {
+        _putchar('-');
+        _putchar('0' + abs(n));
+        _putchar(',');
+    }
+    else
+    {
+        _putchar('-');
+        _putchar('0' + abs(n) / 10);
+        _putchar('0' + abs(n) % 10);
+        _putchar(',');
+    }
+	for (int i = n + 1; i < 98; ++i)
+	{
+		if (i >= 0 && i < 10)
+		{
+			_putchar(' ');
+			_putchar('0' + i);
+            _putchar(',');
+		} 
+		else if (i >= 0 && i > 10)
+		{
+			_putchar(' ');
+			_putchar('0' + i/10);
+			_putchar('0' + i%10);
+            _putchar(',');
+		}
+        else if (i < 0 && i < 10)
+        {
+            _putchar('-');
+            _putchar(' ');
+			_putchar('0' + abs(i));
+            _putchar(',');
+        }
+        else
+        {
+            _putchar('-');
+            _putchar(' ');
+			_putchar('0' + abs(i)/10);
+			_putchar('0' + abs(i)%10);
+            _putchar(',');
+        }
+		
+	}
+	_putchar('\n');
+	return;
+}
+
