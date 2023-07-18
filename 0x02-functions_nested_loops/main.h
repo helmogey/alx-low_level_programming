@@ -405,8 +405,9 @@ void print_times_table(int n)
 			{
 				if (i * j < 10)
 				{
-					if (j < 9)
+					if (j < n)
 					{
+						_putchar(' ');
 						_putchar(' ');
 						_putchar(' ');
 						_putchar('0' + (i * j));
@@ -416,13 +417,15 @@ void print_times_table(int n)
 					{
 						_putchar(' ');
 						_putchar(' ');
+						_putchar(' ');
 						_putchar('0' + (i * j));
 					}
 				}
-				else
+				else if (i * j < 100)
 				{
-					if (j < 9)
+					if (j < n)
 					{
+						_putchar(' ');
 						_putchar(' ');
 						_putchar('0' + (i * j) / 10);
 						_putchar('0' + (i * j) % 10);
@@ -430,16 +433,40 @@ void print_times_table(int n)
 					}
 					else if (i < 2)
 					{
+						_putchar(' ');
 						_putchar('0' + (i * j) / 10);
 						_putchar('0' + (i * j) % 10);
 					}
 					else
 					{
 						_putchar(' ');
+						_putchar(' ');
 						_putchar('0' + (i * j) / 10);
 						_putchar('0' + (i * j) % 10);
 					}
-
+				}
+				else{
+					if (j < n)
+					{
+						_putchar(' ');
+						_putchar('0' + (i * j) / 100);
+						_putchar('0' + ((i * j)-100) / 10);
+						_putchar('0' + ((i * j)-100) % 10);
+						_putchar(',');
+					}
+					else if (i < 2)
+					{
+						_putchar('0' + (i * j) / 100);
+						_putchar('0' + ((i * j)-100) / 10);
+						_putchar('0' + ((i * j)-100) % 10);
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar('0' + (i * j) / 100);
+						_putchar('0' + ((i * j)-100) / 10);
+						_putchar('0' + ((i * j)-100) % 10);
+					}
 				}
 			}
 			_putchar('\n');
