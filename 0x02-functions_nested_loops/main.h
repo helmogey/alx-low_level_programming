@@ -5,7 +5,7 @@
 *@i: counter
 *Return: Always 0 (Success)
 */
-void _putchar(c);
+int _putchar(char c);
 
 void print_alphabet(void)
 {
