@@ -1,4 +1,3 @@
-#include <iostream>
 /**
 *print_alphabet - helper function
 *Description: 'print string'
