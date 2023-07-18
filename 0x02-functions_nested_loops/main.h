@@ -254,90 +254,122 @@ int add(int a, int b)
 *print_to_98 - helper function
 *Description: 'print string'
 *@n: input number
+*@i: integer for thw while loop
 *Return: Always 0 (Success)
 */
 void print_to_98(int n)
 {
 	int i;
-
-	if (n >= 0 && n < 10)
-	{
-		_putchar('0' + n);
-        if (n < 98)
-		{
-			_putchar(',');
-		}
-	}
-	else if (n >= 0 && n > 10)
-	{
-		_putchar('0' + n/10);
-		_putchar('0' + n%10);
-        if (n < 98)
-		{
-			_putchar(',');
-		}
-	}
-    else if ( n < 0 && abs(n) < 10)
+    if (n !=98)
     {
-        _putchar('-');
-        _putchar('0' + abs(n));
-        if (n < 98)
-		{
-			_putchar(',');
-		}
-    }
-    else
-    {
-        _putchar('-');
-        _putchar('0' + abs(n) / 10);
-        _putchar('0' + abs(n) % 10);
-		if (n < 98)
-		{
-			_putchar(',');
-		}
-    }
-	while (i != 98)
-	{
-		if (i >= 0 && i < 10)
-		{
-			_putchar(' ');
-			_putchar('0' + i);
-			_putchar(',');
-		} 
-		else if (i >= 0 && i > 10)
-		{
-			_putchar(' ');
-			_putchar('0' + i/10);
-			_putchar('0' + i%10);
-			_putchar(',');
-		}
-        else if (i < 0 && i < 10)
+        if (n >= 0 && n < 10)
+        {
+            _putchar('0' + n);
+            _putchar(',');
+        }
+        else if (n >= 0 && n > 10 && n < 100)
+        {
+            _putchar('0' + n/10);
+            _putchar('0' + n%10);
+            _putchar(',');
+        }
+        else if (n >= 0 && n > 10 && n >= 100)
+        {
+            _putchar('0' + n/100);
+            _putchar('0' + (n-100)/10);
+            _putchar('0' + (n-100)%10);
+            _putchar(',');   
+        }
+        else if ( n < 0 && abs(n) < 10)
         {
             _putchar('-');
-            _putchar(' ');
-			_putchar('0' + abs(i));
-			_putchar(',');
+            _putchar('0' + abs(n));
+            _putchar(',');
+        }
+        else if( n < 0 && abs(n) < 10 && abs(n) < 100)
+        {
+            _putchar('-');
+            _putchar('0' + abs(n) / 10);
+            _putchar('0' + abs(n) % 10);
+            _putchar(',');
+        }
+        else if( n < 0 && abs(n) < 10 && abs(n) >= 100)
+        {
+            _putchar('-');
+            _putchar('0' + abs(n) / 100);
+            _putchar('0' + (abs(n)-100) / 10);
+            _putchar('0' + (abs(n)-100) % 10);
+            _putchar(',');
+        }
+
+        if (n < 98)
+        {
+            i = n + 1;
         }
         else
         {
-            _putchar('-');
-            _putchar(' ');
-			_putchar('0' + abs(i)/10);
-			_putchar('0' + abs(i)%10);
-            _putchar(',');
+            i = n -1;
         }
-		if ( i < 98)
-		{
-			i++;
-		}
-		else
-		{
-			i--;
-		}
-	}
-	_putchar(' ');
-	_putchar('0' + 98/10);
-	_putchar('0' + 98%10);
+        while (i != 98)
+        {
+            if (i >= 0 && i < 10)
+            {
+                _putchar(' ');
+                _putchar('0' + i);
+                _putchar(',');
+            } 
+            else if (i >= 0 && i > 10 && i < 100)
+            {
+                _putchar(' ');
+                _putchar('0' + i/10);
+                _putchar('0' + i%10);
+                _putchar(',');
+            }
+            else if (i >= 0 && i > 10 && i >= 100)
+            {
+                _putchar(' ');
+                _putchar('0' + i/100);
+                _putchar('0' + (i-100)/10);
+                _putchar('0' + (i-100)%10);
+                _putchar(',');
+            }
+            else if (i < 0 && i < 10)
+            {
+                _putchar('-');
+                _putchar(' ');
+                _putchar('0' + abs(i));
+                _putchar(',');
+            }
+            else if (i < 0 && i > 10 & i < 100)
+            {
+                _putchar('-');
+                _putchar(' ');
+                _putchar('0' + abs(i)/10);
+                _putchar('0' + abs(i)%10);
+                _putchar(',');
+            }
+            else if (i < 0 && i > 10 & i >= 100)
+            {
+                _putchar('-');
+                _putchar(' ');
+                _putchar('0' + abs(i)/100);
+                _putchar('0' + (abs(i)-100)/10);
+                _putchar('0' + (abs(i)-100)%10);
+                _putchar(',');
+            }
+            if ( i < 98)
+            {
+                i++;
+            }
+            else
+            {
+                i--;
+            }
+        }
+    }
+    _putchar(' ');
+    _putchar('0' + 98/10);
+    _putchar('0' + 98%10);
 	_putchar('\n');
 	return;
 }
