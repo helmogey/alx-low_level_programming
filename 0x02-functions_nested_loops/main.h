@@ -379,3 +379,72 @@ void print_to_98(int n)
     }
 	return;
 }
+
+
+
+
+
+/**
+*print_times_table - helper function
+*Description: 'print string'
+*@n: the input number
+*Return: Always 0 (Success)
+*/
+void print_times_table(int n)
+{
+	if (n > 0 && n < 15)
+	{
+		int i;
+		int j;
+
+		for (i = 0; i < n; i++)
+		{
+			_putchar('0');
+			_putchar(',');
+			for (j = 1; j < n; j++)
+			{
+				if (i * j < 10)
+				{
+					if (j < 9)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + (i * j));
+						_putchar(',');   
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + (i * j));
+					}
+				}
+				else
+				{
+					if (j < 9)
+					{
+						_putchar(' ');
+						_putchar('0' + (i * j) / 10);
+						_putchar('0' + (i * j) % 10);
+						_putchar(',');
+					}
+					else if (i < 2)
+					{
+						_putchar('0' + (i * j) / 10);
+						_putchar('0' + (i * j) % 10);
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar('0' + (i * j) / 10);
+						_putchar('0' + (i * j) % 10);
+					}
+
+				}
+			}
+			_putchar('\n');
+		}
+	}
+    return;
+}
+
