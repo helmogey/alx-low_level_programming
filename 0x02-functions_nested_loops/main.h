@@ -383,13 +383,6 @@ void print_to_98(int n)
 
 
 
-
-/**
-*print_times_table - helper function
-*Description: 'print string'
-*@n: the input number
-*Return: Always 0 (Success)
-*/
 /**
 *print_times_table - helper function
 *Description: 'print string'
