@@ -1,4 +1,3 @@
-#include "_putchar.c"
 /**
 *print_alphabet - helper function
 *Description: 'print string'
@@ -21,4 +20,3 @@ c++;
 _putchar('\n');
 return;
 }
-
