@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 *main - Entry point
 *Description: 'print string'
@@ -8,4 +9,3 @@ int main(void)
 _putchar('_putchar');
 return (0);
 }
-
