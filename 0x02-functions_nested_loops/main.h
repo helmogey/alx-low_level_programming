@@ -267,13 +267,13 @@ void print_to_98(int n)
             _putchar('0' + n);
             _putchar(',');
         }
-        else if (n >= 0 && n > 10 && n < 100)
+        else if (n >= 0 && n >= 10 && n < 100)
         {
             _putchar('0' + n/10);
             _putchar('0' + n%10);
             _putchar(',');
         }
-        else if (n >= 0 && n > 10 && n >= 100)
+        else if (n >= 0 && n >= 100)
         {
             _putchar('0' + n/100);
             _putchar('0' + (n-100)/10);
@@ -286,14 +286,14 @@ void print_to_98(int n)
             _putchar('0' + abs(n));
             _putchar(',');
         }
-        else if( n < 0 && abs(n) < 10 && abs(n) < 100)
+        else if( n < 0 && abs(n) >= 10 && abs(n) < 100)
         {
             _putchar('-');
             _putchar('0' + abs(n) / 10);
             _putchar('0' + abs(n) % 10);
             _putchar(',');
         }
-        else if( n < 0 && abs(n) < 10 && abs(n) >= 100)
+        else if( n < 0 &&  abs(n) >= 100)
         {
             _putchar('-');
             _putchar('0' + abs(n) / 100);
@@ -318,14 +318,14 @@ void print_to_98(int n)
                 _putchar('0' + i);
                 _putchar(',');
             } 
-            else if (i >= 0 && i > 10 && i < 100)
+            else if (i >= 0 && i >= 10 && i < 100)
             {
                 _putchar(' ');
                 _putchar('0' + i/10);
                 _putchar('0' + i%10);
                 _putchar(',');
             }
-            else if (i >= 0 && i > 10 && i >= 100)
+            else if (i >= 0 && i >= 100)
             {
                 _putchar(' ');
                 _putchar('0' + i/100);
@@ -340,7 +340,7 @@ void print_to_98(int n)
                 _putchar('0' + abs(i));
                 _putchar(',');
             }
-            else if (i < 0 && i > 10 && i < 100)
+            else if (i < 0 && i >= 10 && i < 100)
             {
                 _putchar('-');
                 _putchar(' ');
@@ -348,7 +348,7 @@ void print_to_98(int n)
                 _putchar('0' + abs(i)%10);
                 _putchar(',');
             }
-            else if (i < 0 && i > 10 && i >= 100)
+            else if (i < 0 && i >= 100)
             {
                 _putchar('-');
                 _putchar(' ');
