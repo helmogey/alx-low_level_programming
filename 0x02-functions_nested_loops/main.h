@@ -405,7 +405,7 @@ void print_times_table(int n)
 			{
 				if (i * j < 10)
 				{
-					if (j <= n)
+					if (j < n)
 					{
 						_putchar(' ');
 						_putchar(' ');
@@ -431,13 +431,20 @@ void print_times_table(int n)
 						_putchar('0' + (i * j) % 10);
 						_putchar(',');
 					}
-					else if (i < 2)
+					else if (i < 2 && j != n)
 					{
 						_putchar(' ');
 						_putchar('0' + (i * j) / 10);
 						_putchar('0' + (i * j) % 10);
 					}
-					else
+                    else if (i < 2 && j == n)
+                    {
+                        _putchar(' ');
+                        _putchar(' ');
+						_putchar('0' + (i * j) / 10);
+						_putchar('0' + (i * j) % 10);
+                    }
+                    else
 					{
 						_putchar(' ');
 						_putchar(' ');
@@ -447,7 +454,7 @@ void print_times_table(int n)
 				}
 				else
 				{
-					if (j <= n)
+					if (j < n)
 					{
 						_putchar(' ');
 						_putchar('0' + (i * j) / 100);
