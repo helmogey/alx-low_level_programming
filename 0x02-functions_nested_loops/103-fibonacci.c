@@ -13,7 +13,7 @@ int main(void)
 {
 int a = 1, res = 1, b = 2, c, i;
 
-for (i = 1; i <= 10; ++i)
+for (i = 1; i <= 50; ++i)
 {
 if (a % 2 == 0)
 {
