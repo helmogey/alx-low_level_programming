@@ -11,7 +11,7 @@
 */
 int main(void)
 {
-long int a = 1, res = 1, b = 2, c, i;
+long int a = 1, res = 0, b = 2, c, i;
 
 for (i = 1; i <= 50; ++i)
 {
