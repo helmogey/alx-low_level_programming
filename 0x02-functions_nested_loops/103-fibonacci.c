@@ -11,11 +11,11 @@
 */
 int main(void)
 {
-int a = 1, res = 1, b = 2, c, i;
+long int a = 1, res = 1, b = 2, c, i;
 
 for (i = 1; i <= 50; ++i)
 {
-if (a % 2 == 0)
+if (a <= 4000000 && a % 2 == 0)
 {
 res = res + a;
 }
@@ -23,6 +23,6 @@ c = a + b;
 a = b;
 b = c;
 }
-printf("%d\n", res);
+printf("%ld\n", res);
 return (0);
 }
