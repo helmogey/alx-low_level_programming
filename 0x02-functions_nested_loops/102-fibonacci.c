@@ -2,10 +2,10 @@
 /**
 *main - Entry point
 *Description: 'print string'
-*@a : integer to be the final
-*@b : integer
-*@c : integer
-*@i : integer
+*@a: integer to be the final
+*@b: integer
+*@c: integer
+*@i: integer
 *Return: Always 0 (Success)
 */
 int main(void)
