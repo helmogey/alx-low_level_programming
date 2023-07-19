@@ -2,11 +2,6 @@
 /**
 *main - Entry point
 *Description: 'print string'
-*@a: integer to be the final
-*@b: integer
-*@c: integer
-*@i: integer
-*@res: final output
 *Return: Always 0 (Success)
 */
 int main(void)
