@@ -6,25 +6,23 @@
 *@b: integer
 *@c: integer
 *@i: integer
+*@res: final output
 *Return: Always 0 (Success)
 */
 int main(void)
 {
-long int a = 1, b = 2, c, i;
+int a = 1, res = 1, b = 2, c, i;
 
-for (i = 1; i <= 50; ++i)
+for (i = 1; i <= 10; ++i)
 {
-if (i < 50)
+if (a % 2 == 0)
 {
-printf("%ld, ", a);
-}
-else
-{
-printf("%ld\n", a);
+res = res + a;
 }
 c = a + b;
 a = b;
 b = c;
 }
+printf("%d\n", res);
 return (0);
 }
