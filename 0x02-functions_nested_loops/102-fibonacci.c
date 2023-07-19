@@ -14,7 +14,7 @@ long int a = 1, b = 2, c, i;
 
 for (i = 1; i <= 50; ++i)
 {
-if i < 50
+if (i < 50)
 {
 printf("%ld, ", a);
 }
