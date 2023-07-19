@@ -9,9 +9,10 @@
 *Return: Always 0 (Success)
 */
 int main() {
-    lon gint a = 1, b = 2, c, i;
+    long int a = 1, b = 2, c, i;
 
-    for (i = 1; i <= 50; ++i) {
+    for (i = 1; i <= 50; ++i)
+    {
         printf("%ld\n", a);
         c = a + b;
         a = b;
