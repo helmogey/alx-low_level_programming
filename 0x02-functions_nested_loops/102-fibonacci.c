@@ -1,16 +1,14 @@
 #include <stdio.h>
 /**
 *main - Entry point
-*Description: 'print string'
-*@a: integer to be the final
-*@b: integer
-*@c: integer
-*@i: integer
-*Return: Always 0 (Success)
+**Return: Always 0 (Success)
 */
 int main(void)
 {
-long int a = 1, b = 2, c, i;
+long int a = 1;
+long int b = 2;
+long int c;
+int i;
 
 for (i = 1; i <= 50; ++i)
 {
