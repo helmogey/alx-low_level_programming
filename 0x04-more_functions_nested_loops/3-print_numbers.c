@@ -1,9 +1,17 @@
 /**
+* _putchar - writes the character c to stdout
+* @c: The character to print
+* Return: On success 1.
+* On error, -1 is returned, and errno is set appropriately.
+*/
+int _putchar(char c);
+
+/**
 *print_numbers - helper function
 *Description: 'print string'
 *Return: Always 0 (Success)
 */
-int _putchar(char c);
+
 void print_numbers(void)
 {
 int i;
@@ -14,4 +22,3 @@ _putchar('0' + i);
 _putchar('\n');
 return;
 }
-
