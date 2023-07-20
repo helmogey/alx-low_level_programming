@@ -10,12 +10,12 @@ long number = 612852475143;
 long factor = 2L;
 long largest_factor = 0L;
 
-while number > 1
+while (number > 1)
 {
 if (number % factor == 0)
 {
 largest_factor = factor;
-while number % factor == 0
+while (number % factor == 0)
 {
 number /= factor;
 }
