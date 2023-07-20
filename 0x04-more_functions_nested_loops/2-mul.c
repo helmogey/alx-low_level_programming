@@ -1,4 +1,3 @@
-#include 'main.h'
 /**
 *mul - helper function
 *Description: 'print string'

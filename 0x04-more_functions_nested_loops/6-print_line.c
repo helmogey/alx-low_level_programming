@@ -1,4 +1,3 @@
-#include 'main.h'
 /**
 *print_line - helper function
 *Description: 'print string'

@@ -1,4 +1,3 @@
-#include 'main.h'
 /**
 *print_numbers - helper function
 *Description: 'print string'

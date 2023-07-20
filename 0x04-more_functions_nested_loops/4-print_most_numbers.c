@@ -1,4 +1,3 @@
-#include 'main.h'
 /**
 *print_most_numbers - helper function
 *Description: 'print string'

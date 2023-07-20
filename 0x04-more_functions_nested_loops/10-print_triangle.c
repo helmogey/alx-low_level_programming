@@ -1,4 +1,3 @@
-#include 'main.h'
 /**
 *print_triangle - helper function
 *Description: 'print string'

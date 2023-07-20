@@ -1,4 +1,3 @@
-#include 'main.h'
 /**
 *print_square - helper function
 *Description: 'print string'

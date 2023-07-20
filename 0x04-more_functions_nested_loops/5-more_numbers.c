@@ -1,4 +1,3 @@
-#include 'main.h'
 /**
 *more_numbers - helper function
 *Description: 'print string'

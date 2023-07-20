@@ -1,4 +1,3 @@
-#include 'main.h'
 /**
 *print_diagonal - helper function
 *Description: 'print string'

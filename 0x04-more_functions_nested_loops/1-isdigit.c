@@ -1,4 +1,4 @@
-#include 'main.h'
+#include <ctype.h>
 /**
 *_isdigit - helper function
 *Description: 'print string'
