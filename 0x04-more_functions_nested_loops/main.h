@@ -1,4 +1,4 @@
-#include <cstdlib>
+#include <ctype.h>
 
 int _isupper(int c);
 int _isdigit(int c);
@@ -116,33 +116,45 @@ else
 {
 num = n;
 }
-if (n < 10)
+if (num < 10)
 {
 _putchar('0' + num);    
 }
 else if (num < 100)
 {
 _putchar('0' + num / 10);
-_putchar('0' + num / 10);
+_putchar('0' + num % 10);
 }
 else if (num < 1000)
 {
 _putchar('0' + num / 100);
-_putchar('0' + num / 100);
+_putchar('0' + num%100 / 10);
+_putchar('0' + num%100 % 10);
 }
 else if (num < 10000)
 {
 _putchar('0' + num / 1000);
-_putchar('0' + num / 1000);
+_putchar('0' + num%1000 / 100);
+_putchar('0' + (num%1000)%100 / 10);
+_putchar('0' + (num%1000)%100 % 10);
 }
-else if (num < 10000)
+else if (num < 100000)
 {
-_putchar('0' + num / 1000);
-_putchar('0' + num / 1000);
+_putchar('0' + num / 10000);
+_putchar('0' + num%10000 / 1000);
+_putchar('0' + (num%10000)%1000 / 100);
+_putchar('0' + ((num%10000)%1000)%100 / 10);
+_putchar('0' + ((num%10000)%1000)%100 % 10);
 }
-else if (num < 10000)
+else if (num < 1000000)
 {
-_putchar('0' + num / 1000);
-_putchar('0' + num / 1000);
+_putchar('0' + num / 1000000);
+_putchar('0' + num%1000000 / 100000);
+_putchar('0' + (num%1000000)%100000 / 10000);
+_putchar('0' + ((num%1000000)%100000)%10000 / 1000);
+_putchar('0' + (((num%1000000)%100000)%10000)%100 / 100);
+_putchar('0' + (((num%1000000)%100000)%10000)%100 / 10);
+_putchar('0' + (((num%1000000)%100000)%10000)%100 % 10);
 }
+return;
 }
