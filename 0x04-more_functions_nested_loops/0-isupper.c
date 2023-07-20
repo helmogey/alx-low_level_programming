@@ -1,3 +1,4 @@
+#include <ctype.h>
 /**
 *_isupper - helper function
 *Description: 'print string'
