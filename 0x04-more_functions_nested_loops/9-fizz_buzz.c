@@ -4,7 +4,7 @@
 *Description: 'print string'
 *Return: Always 0 (Success)
 */
-void main(void)
+int main(void)
 {
 int i;
 
@@ -32,5 +32,5 @@ printf(" ");
 }
 }
 printf("\n");
-return;
+return (0);
 }
