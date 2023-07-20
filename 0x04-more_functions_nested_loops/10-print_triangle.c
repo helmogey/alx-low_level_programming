@@ -23,18 +23,18 @@ for (j = 0; j < size; ++j)
 {
 for (k = 0; k < size - j; ++k)
 {
-putchar(' ');
+_putchar(' ');
 }
 for (i = k; i <= size; ++i)
 {
-putchar('#');
+_putchar('#');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
 else
 {
-putchar('\n');
+_putchar('\n');
 }
 return;
 }
