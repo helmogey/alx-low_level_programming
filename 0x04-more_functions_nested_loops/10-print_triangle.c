@@ -21,7 +21,7 @@ if (size > 0)
 {
 for (j = 0; j < size; ++j)
 {
-for (k = 0; k < size - j; ++k)
+for (k = 0; k < size - j - 1; ++k)
 {
 _putchar(' ');
 }
