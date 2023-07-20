@@ -1,4 +1,3 @@
-#include "main.h"
 /**
 * _putchar - writes the character c to stdout
 * @c: The character to print
@@ -16,9 +15,10 @@ int _putchar(char c);
 void print_numbers(void)
 {
 int i;
+
 for (i = 0; i < 10; ++i)
 {
-_putchar('0' + i);
+_putchar(i + '0');
 }
 _putchar('\n');
 return;
