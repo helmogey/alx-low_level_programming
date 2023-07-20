@@ -1,3 +1,5 @@
+#include <cstdlib>
+
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
@@ -104,33 +106,43 @@ return;
 
 void print_number(int n)
 {
+int num;
+if (n < 0)
+{
+num = abs(n);
+_putchar('-');
+}
+else
+{
+num = n;
+}
 if (n < 10)
 {
-_putchar('0' + n);    
+_putchar('0' + num);    
 }
-else if (n < 100)
+else if (num < 100)
 {
-_putchar('0' + n / 10);
-_putchar('0' + n / 10);
+_putchar('0' + num / 10);
+_putchar('0' + num / 10);
 }
-else if (n < 1000)
+else if (num < 1000)
 {
-_putchar('0' + n / 100);
-_putchar('0' + n / 100);
+_putchar('0' + num / 100);
+_putchar('0' + num / 100);
 }
-else if (n < 10000)
+else if (num < 10000)
 {
-_putchar('0' + n / 1000);
-_putchar('0' + n / 1000);
+_putchar('0' + num / 1000);
+_putchar('0' + num / 1000);
 }
-else if (n < 10000)
+else if (num < 10000)
 {
-_putchar('0' + n / 1000);
-_putchar('0' + n / 1000);
+_putchar('0' + num / 1000);
+_putchar('0' + num / 1000);
 }
-else if (n < 10000)
+else if (num < 10000)
 {
-_putchar('0' + n / 1000);
-_putchar('0' + n / 1000);
+_putchar('0' + num / 1000);
+_putchar('0' + num / 1000);
 }
 }
