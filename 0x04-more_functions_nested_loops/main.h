@@ -1,4 +1,3 @@
-#include <stdlib.h>
 
 int _isupper(int c);
 int _isdigit(int c);
@@ -109,7 +108,7 @@ void print_number(int n)
 int num;
 if (n < 0)
 {
-num = abs(n);
+num = n * -1;
 _putchar('-');
 }
 else
