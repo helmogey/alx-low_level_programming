@@ -21,7 +21,7 @@ number /= factor;
 }
 factor++;
 }
-printf("%ld", largest_factor);
+printf("%ld\n", largest_factor);
 return (0);
 }
 
