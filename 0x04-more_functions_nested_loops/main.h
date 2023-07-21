@@ -91,7 +91,7 @@ if (n > 0)
 {
 for (j = 0; j < n; ++j)
 {
-for (k = 0; k <= j; ++k)
+for (k = 1; k <= j; ++k)
 {
 _putchar(' ');
 }
