@@ -12,7 +12,7 @@ int i;
 
 for (i = strlen(s); i >= 0; --i)
 {
-c[strlen(s) - i] = s[i];
+*c[strlen(s) - i] = s[i];
 }
 puts(c);
 return;
