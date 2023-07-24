@@ -1,4 +1,5 @@
-#include <string.h>
+#include<string.h>
+#include <stdio.h>
 /**
  * print_rev - check the code
  * @s: input string
