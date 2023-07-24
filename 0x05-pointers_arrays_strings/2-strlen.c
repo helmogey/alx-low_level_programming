@@ -1,3 +1,4 @@
+#include<string.h>
 /**
  * _strlen - check the code
  * @s: input string
@@ -5,6 +6,5 @@
  */
 int _strlen(char *s)
 {
-int val = strlen(s);
-Return(val);
+Return(str(*s));
 }
