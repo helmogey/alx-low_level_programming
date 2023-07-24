@@ -15,7 +15,7 @@ c[strlen(s) - i] = s[i];
 }
 for (i = 0; i >= 0; ++i)
 {
-*s[i] = *c[i];
+*s[i] = c[i];
 }
 return;
 }
