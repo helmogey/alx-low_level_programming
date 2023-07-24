@@ -9,9 +9,9 @@ void print_rev(char *s)
 char c;
 int i;
 
-for (i = strlen(c); i >= 0; --i)
+for (i = strlen(s); i >= 0; --i)
 {
-c[i - strlen(c)] = s[i];
+c[i - strlen(s)] = s[i];
 }
 puts(c);
 return;
