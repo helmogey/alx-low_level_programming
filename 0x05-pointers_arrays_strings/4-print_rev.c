@@ -11,8 +11,8 @@ int i;
 
 for (i = strlen(s) - 1; i >= 0; --i)
 {
-charput(s[i]);
+putchar(s[i]);
 }
-charput('\n');
+putchar('\n');
 return;
 }
