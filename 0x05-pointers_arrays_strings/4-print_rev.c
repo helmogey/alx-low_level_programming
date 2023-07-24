@@ -11,7 +11,7 @@ int i;
 
 for (i = strlen(s); i >= 0; --i)
 {
-c[i - strlen(s)] = s[i];
+c[strlen(s) - i] = s[i];
 }
 puts(c);
 return;
