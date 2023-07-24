@@ -14,6 +14,6 @@ for (i = strlen(s); i >= 0; --i)
 {
 *c[strlen(s) - i] = s[i];
 }
-puts(c);
+puts(&c);
 return;
 }
