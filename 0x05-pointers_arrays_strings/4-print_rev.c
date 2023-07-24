@@ -7,10 +7,10 @@
  */
 void print_rev(char *s)
 {
-char *c[1000];
+char *c[100];
 int i;
 
-for (i = strlen(s); i >= 0; --i)
+for (i = strlen(s) - 1; i >= 0; --i)
 {
 *c[strlen(s) - i] = s[i];
 }
