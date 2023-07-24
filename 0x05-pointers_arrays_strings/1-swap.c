@@ -1,5 +1,5 @@
 /**
- * swapinput - check the code
+ * swap_int - check the code
  * @a: input one
  * @b: input 2
  */
