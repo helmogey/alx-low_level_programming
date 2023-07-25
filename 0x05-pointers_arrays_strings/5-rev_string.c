@@ -1,21 +1,19 @@
-#include<string.h>
 /**
  * rev_string - check the code
  * @s: input string
  * Return: Always 0.
  */
-void rev_string(char *s)
+void rev_string(char* str)
 {
-char c[100];
-int i;
+char* start = str;
+char* end = str + strlen(str) - 1;
 
-for (i = strlen(s) - 1; i >= 0; --i)
+while (start < end)
 {
-c[strlen(s) - i] = *s[i];
+char temp = *start;
+*start = *end;
+*end = temp;
+start++;
+end--;
 }
-for (i = 0; i >= 0; ++i)
-{
-*s[i] = c[i];
-}
-return;
 }
