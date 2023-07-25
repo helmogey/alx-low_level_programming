@@ -1,4 +1,3 @@
-#include "main.h"
 #include<string.h>
 /**
  * rev_string - check the code
@@ -12,7 +11,7 @@ int i;
 
 for(i = 0; i < l; i+=2)
 {
-_putchar(str[i]);
+putchar(str[i]);
 }
 return;
 }
