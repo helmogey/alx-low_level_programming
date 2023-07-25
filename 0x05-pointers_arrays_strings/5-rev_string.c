@@ -3,10 +3,10 @@
  * @s: input string
  * Return: Always 0.
  */
-void rev_string(char* str)
+void rev_string(char *s)
 {
-char* start = str;
-char* end = str + strlen(str) - 1;
+char *start = s;
+char *end = str + strlen(str) - 1;
 
 while (start < end)
 {
