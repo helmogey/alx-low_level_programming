@@ -20,7 +20,7 @@ else
 start = (l / 2) + 1;
 }
 
-for (i = (strlen(str) / 2) + 1; i < l; ++i)
+for (i = start; i < l; ++i)
 {
 _putchar(str[i]);
 }
