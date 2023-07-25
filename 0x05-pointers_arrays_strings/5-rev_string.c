@@ -1,3 +1,4 @@
+#include<string.h>
 /**
  * rev_string - check the code
  * @s: input string
