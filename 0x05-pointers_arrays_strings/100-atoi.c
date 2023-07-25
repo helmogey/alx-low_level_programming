@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * _atoi - check the code
  * @s: input string
