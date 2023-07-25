@@ -12,8 +12,8 @@ int i;
 
 for(i = 0; i < l; i+=2)
 {
-puts(str[i]);
+putchar(str[i]);
 }
-puts("\n");
+putchar("\n");
 return;
 }
