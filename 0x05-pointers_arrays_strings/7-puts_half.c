@@ -9,6 +9,16 @@ void puts_half(char *str)
 {
 int l = strlen(str);
 int i;
+int start;
+
+if (l % 2 == 0)
+{
+start = l / 2;
+}
+else
+{
+start = (l / 2) + 1;
+}
 
 for (i = (strlen(str) / 2) + 1; i < l; ++i)
 {
