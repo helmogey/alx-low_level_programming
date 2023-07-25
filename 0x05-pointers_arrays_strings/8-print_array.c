@@ -1,4 +1,4 @@
-#include<string.h>
+#include <stdio.h>
 /**
  * rev_string - check the code
  * @a:input array
