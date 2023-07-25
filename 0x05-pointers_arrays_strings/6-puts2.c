@@ -14,6 +14,6 @@ for(i = 0; i < l; i+=2)
 {
 putchar(str[i]);
 }
-putchar("\n");
+putchar('\n');
 return;
 }
