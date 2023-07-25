@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include<string.h>
+#include "main.h"
 /**
  * puts2 - check the code
  * @str: input string
@@ -12,8 +12,8 @@ int i;
 
 for (i = 0; i < l; i += 2)
 {
-putchar(str[i]);
+_putchar(str[i]);
 }
-putchar('\n');
+_putchar('\n');
 return;
 }
