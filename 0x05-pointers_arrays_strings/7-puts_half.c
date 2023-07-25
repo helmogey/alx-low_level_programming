@@ -14,5 +14,6 @@ for (i = strlen(str) / 2; i < l; ++i)
 {
 _putchar(str[i]);
 }
+_putchar('\n');
 return;
 }
