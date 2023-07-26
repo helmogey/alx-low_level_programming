@@ -1,3 +1,4 @@
+#include <string.h>
 /**
  * *leet - check the code
  * @str: input

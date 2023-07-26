@@ -1,3 +1,4 @@
+#include <string.h>
 /**
  * *cap_string - check the code
  * @str: input
