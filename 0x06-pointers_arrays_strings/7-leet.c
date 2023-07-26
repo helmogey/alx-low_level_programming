@@ -8,7 +8,7 @@ char *leet(char *str)
 {
 int i;
 
-for (i = 0; i < strlen(str); ++i)
+for (i = 0; i < (int)strlen(str); ++i)
 {
 if (str[i] == 'A' || str[i] == 'a')
 {
