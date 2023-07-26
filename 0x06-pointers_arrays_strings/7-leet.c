@@ -8,7 +8,7 @@ char *leet(char *str)
 {
 int i;
 
-for (i = 0; i < (int)strlen(str); ++i)
+for (i = 0; i < (int)strlen(str) - 1; ++i)
 {
 if (str[i] == 'A' || str[i] == 'a')
 {
@@ -26,7 +26,7 @@ else if (str[i] == 'T' || str[i] == 't')
 {
 str[i] = '7';
 }
-else if (str[i] == 'I' || str[i] == 'i')
+else if (str[i] == 'L' || str[i] == 'l')
 {
 str[i] = '1';
 }
