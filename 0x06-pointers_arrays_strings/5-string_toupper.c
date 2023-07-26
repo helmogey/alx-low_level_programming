@@ -1,4 +1,4 @@
-#include<string.h>
+#include <ctype.h>
 /**
  * *string_toupper - check the code
  * @str: input
