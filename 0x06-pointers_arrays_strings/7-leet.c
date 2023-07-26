@@ -31,5 +31,5 @@ else if (str[i] == 'L' || str[i] == 'l')
 str[i] = '1';
 }
 }
-return ();
+return (str);
 }
