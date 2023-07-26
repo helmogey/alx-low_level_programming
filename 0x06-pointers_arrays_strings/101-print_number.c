@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_number - check the code
  * @n: input
