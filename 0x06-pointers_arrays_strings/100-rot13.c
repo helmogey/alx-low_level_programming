@@ -1,3 +1,4 @@
+#include <ctype.h>
 #include <string.h>
 /**
  * *rot13 - check the code
