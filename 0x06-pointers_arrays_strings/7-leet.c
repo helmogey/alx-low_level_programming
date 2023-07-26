@@ -26,7 +26,7 @@ else if (str[i] == 'T' || str[i] == 't')
 {
 str[i] = '7';
 }
-else if (str[i] == 'L' || str[i] == 'l')
+else if (str[i] == 'I' || str[i] == 'i')
 {
 str[i] = '1';
 }
