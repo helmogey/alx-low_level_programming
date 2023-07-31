@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <string.h>
 /**
  * _strspn - check the code
