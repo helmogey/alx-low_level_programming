@@ -6,7 +6,7 @@
  * @n: number
  * Return: charecter.
  */
-int helper_fn(char s, int l, int n)
+int helper_fn(char *s, int l, int n)
 {
 if (n == l)
 {
