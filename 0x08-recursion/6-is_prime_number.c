@@ -13,15 +13,15 @@ return (0);
 return (helper_fn(n, i - 1));
 }
 /**
- * _sqrt_recursion - check the code
+ * is_prime_number - check the code
  * @n: input number
  * Return: charecter.
  */
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
-if (n < 0)
+if (n <= 1)
 {
-return (-1);
+return (0);
 }
 else
 {
