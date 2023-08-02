@@ -8,11 +8,11 @@
  */
 int helper_fn(char *s, int l, int n)
 {
-if (n == l)
+if (n == l - 1)
 {
 return (1);
 }
-else if (*(s + (l / 2) - n) != *(s + l -1 - (l / 2) + n))
+else if (*(s + l - 1 - n) != *(s + l + n))
 {
 return (0);
 }
@@ -34,6 +34,6 @@ return (0);
 }
 else
 {
-return (helper_fn(s, strlen(s), 0));
+return (helper_fn(s, (strlen(s) / 2), 0));
 }
 }
