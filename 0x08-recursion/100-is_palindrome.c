@@ -19,7 +19,7 @@ return (0);
 }
 else
 {
-return (helper_fn(s, l, n + 1));
+return (helper_fn(s, l1, l2, n + 1));
 }
 }
 /**
