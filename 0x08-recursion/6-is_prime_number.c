@@ -1,25 +1,4 @@
 /**
- * helper_fn - check the code
- * @n: input number
- * @i: number
- * Return: charecter.
- */
-int helper_fn(int n, int i)
-{
-if (n > i && (n / i) == 0)
-{
-return (0);
-}
-else if (n <= i)
-{
-return (1);
-}
-else
-{
-return (helper_fn(n, i++));
-}
-}
-/**
  * is_prime_number - check the code
  * @n: input number
  * Return: charecter.
@@ -32,6 +11,6 @@ return (0);
 }
 else
 {
-return (helper_fn(n, 0));
+return (n / is_prime_number(n - 1));
 }
 }
