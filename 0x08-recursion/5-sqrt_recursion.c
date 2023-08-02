@@ -15,6 +15,6 @@ return (1);
 }
 else
 {
-return (n / _sqrt_recursion(n--));
+return (n / _sqrt_recursion(n - 1));
 }
 }
