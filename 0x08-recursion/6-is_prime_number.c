@@ -8,11 +8,11 @@ int helper_fn(int n, int i)
 {
 if (n > i && (n / i) == 0)
 {
-return (1);
+return (0);
 }
 else if (n <= i)
 {
-return (0);
+return (1);
 }
 else
 {
