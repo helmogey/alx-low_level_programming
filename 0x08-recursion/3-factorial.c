@@ -7,10 +7,16 @@ int factorial(int n)
 {
 int f;
 
-if (n > 0)
+if (n < 0)
 {
-f = f + n;
-n--;
+return (-1);
 }
-return (f);
+else if (n == 0)
+{
+return (1);
+}
+else
+{
+return (n * factorial(n - 1));
+}
 }
