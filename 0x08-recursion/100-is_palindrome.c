@@ -13,7 +13,7 @@ if (n == l1 - 1)
 {
 return (1);
 }
-else if (*(s + l1 - 1 - n) != *(s + l2 + n))
+else if (*(s + l1 - n) != *(s + l2 + n))
 {
 return (0);
 }
