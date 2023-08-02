@@ -5,7 +5,7 @@
  */
 int factorial(int n)
 {
-int f = 0;
+int f;
 
 if (n > 0)
 {
