@@ -2,17 +2,18 @@
 /**
  * helper_fn - check the code
  * @s: input string
- * @l: lenght
+ * @l1: lenght
+ * @l2: length
  * @n: number
  * Return: charecter.
  */
-int helper_fn(char *s, int l, int n)
+int helper_fn(char *s, int l1, int l2, int n)
 {
-if (n == l - 1)
+if (n == l1 - 1)
 {
 return (1);
 }
-else if (*(s + l - 1 - n) != *(s + l + n))
+else if (*(s + l1 - 1 - n) != *(s + l2 + n))
 {
 return (0);
 }
@@ -28,12 +29,12 @@ return (helper_fn(s, l, n + 1));
  */
 int is_palindrome(char *s)
 {
-if (strlen(s) % 2 != 0)
+if (strlen(s) % 2 == 0)
 {
-return (0);
+return (helper_fn(s, (strlen(s) / 2) - 1, (strlen(s) / 2), 0));
 }
 else
 {
-return (helper_fn(s, (strlen(s) / 2), 0));
+return (helper_fn(s, (strlen(s) / 2), (strlen(s) / 2), 0));
 }
 }
