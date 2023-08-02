@@ -12,7 +12,7 @@ if (n == l)
 {
 return (1);
 }
-else if (*(s + l - n) != *(s + l + n))
+else if (*(s + (l / 2) - n) != *(s + l -1 - (l / 2) + n))
 {
 return (0);
 }
@@ -28,12 +28,12 @@ return (helper_fn(s, l, n + 1));
  */
 int is_palindrome(char *s)
 {
-if (strlen(s) % 2 == 0)
+if (strlen(s) % 2 != 0)
 {
 return (0);
 }
 else
 {
-return (helper_fn(s, (strlen(s) / 2) + 1, 0));
+return (helper_fn(s, strlen(s), 0));
 }
 }
