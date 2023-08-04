@@ -7,8 +7,8 @@
 *Return: Always 0 (Success)
 */
 
-void main (char *argv[])
+void main (int argc, char *argv[])
 {
-printf("%s\n", *argv);
+printf("%s\n", *argv[0]);
 return;
 }
