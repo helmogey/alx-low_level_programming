@@ -19,7 +19,7 @@ if (ch == NULL)
 {
 return (NULL);
 }
-while(i < size)
+while (i < size)
 {
 ch[i] = c;
 i++;
