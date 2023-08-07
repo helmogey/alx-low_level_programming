@@ -7,9 +7,14 @@
 */
 char *_strdup(char *str)
 {
-char *str2 = (char *) malloc(sizeof(char) * sizeof(str) + sizeof(char));
-unsigned int i = 0;
+char *str2;
+unsigned int l, i = 0;
 
+while (str[l])
+{
+l++;
+}
+str2 = malloc(sizeof(char) * l);
 if (str == NULL)
 {
 return (NULL);
