@@ -21,9 +21,9 @@ return (NULL);
 }
 while(i < size)
 {
-*(ch + i) = c;
+ch[i] = c;
 i++;
 }
-*(ch + i) = "\0";
+ch[i] = '\0';
 return (ch);
 }
