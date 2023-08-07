@@ -19,7 +19,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-while (i < sizeof(str))
+while (i < l)
 {
 str2[i] = str[i];
 i++;
