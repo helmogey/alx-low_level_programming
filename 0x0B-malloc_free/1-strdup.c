@@ -1,13 +1,13 @@
 #include <stdlib.h>
 /**
-*strdup - start
+*_strdup - start
 *Description: 'print string'
 *@str: size
 *Return: Always 0 (Success)
 */
 char *_strdup(char *str)
 {
-char *str2 = (char *) malloc(sizeof(str));
+char *str2 = (char *) malloc(sizeof(char) * sizeof(str));
 unsigned int i = 0;
 
 if (str == NULL)
