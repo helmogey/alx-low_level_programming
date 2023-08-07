@@ -19,5 +19,5 @@ while (i < sizeof(str))
 str2[i] = str[i];
 i++;
 }
-return (str);
+return (str2);
 }
