@@ -1,8 +1,9 @@
+#include <stdlib.h>
 /**
-*main - start
+*create_array - start
 *Description: 'print string'
-*@argc: number of arguments
-*@argv: arguments
+*@size: size
+*@c: input
 *Return: Always 0 (Success)
 */
 char *create_array(unsigned int size, char c)
