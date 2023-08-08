@@ -21,7 +21,7 @@ return (NULL);
 }
 for (i = 0; i < ac; i++)
 {
-ch[i] = av[i];
+ch[i] = av[i][0];
 }
 return (ch);
 }
