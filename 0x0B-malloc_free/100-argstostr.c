@@ -1,9 +1,9 @@
 #include <stdlib.h>
 /**
-*str_concat - start
+*argstostr - start
 *Description: 'print string'
-*@s1: first string
-*@s2: second string
+*@ac: first string
+*@av: second string
 *Return: Always 0 (Success)
 */
 char *argstostr(int ac, char **av)
