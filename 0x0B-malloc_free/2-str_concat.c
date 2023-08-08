@@ -24,16 +24,23 @@ if (res == NULL)
 {
 return (NULL);
 }
+if (l1 > 0)
+{
 while (i < l1)
 {
 res[i] = s1[i];
 i++;
 }
 i = 0;
+}
+if (l2 > 0)
+{
 while (i < l2)
 {
 res[l1 + i + 1] = s2[0];
 i++;
 }
+}
+res[l1 + i + 1] = '\0';
 return (res);
 }
