@@ -37,10 +37,10 @@ if (l2 > 0)
 {
 while (i < l2)
 {
-res[l1 + i + 1] = s2[i];
+res[l1 + i] = s2[i];
 i++;
 }
 }
-res[l1 + i + 1] = '\0';
+res[l1 + i] = '\0';
 return (res);
 }
