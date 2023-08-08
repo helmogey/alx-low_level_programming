@@ -11,11 +11,11 @@ char *str_concat(char *s1, char *s2)
 char *res;
 int l1 = 0, l2 = 0, i = 0;
 
-while (s1[l1])
+while (s1 && s1[l1])
 {
 l1++;
 }
-while (s2[l2])
+while (s2 && s2[l2])
 {
 l2++;
 }
