@@ -23,5 +23,5 @@ for (i = 0; i < width * height; i++)
 {
 res[i] = 0;
 }
-return (res);
+return (*res);
 }
