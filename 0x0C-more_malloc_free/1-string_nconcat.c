@@ -1,8 +1,10 @@
 #include <stdlib.h>
 /**
-*malloc_checked - start
+*string_nconcat - start
 *Description: 'print string'
-*@b: lenght
+*@s1: first
+*@s2: second
+*@n: length
 *Return: Always 0 (Success)
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
