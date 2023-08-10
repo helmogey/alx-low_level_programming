@@ -11,7 +11,11 @@ int *array_range(int min, int max)
 int i, k = max - min + 1;
 int *arr = malloc(sizeof(int) * k);
 
-if (min > max || arr == NULL)
+if (min > max)
+{
+return (NULL);
+}
+if ( arr == NULL)
 {
 return (NULL);
 }
