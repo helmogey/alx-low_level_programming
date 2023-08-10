@@ -18,7 +18,7 @@ return (NULL);
 }
 for (i = 0; i <= k; i++)
 {
-arr[i] = min + i;
+arr[i] = min++;
 }
 return (arr);
 }
