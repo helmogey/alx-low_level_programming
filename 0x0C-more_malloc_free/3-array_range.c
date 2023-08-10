@@ -15,7 +15,7 @@ if (min > max)
 {
 return (NULL);
 }
-if ( arr == NULL)
+if (arr == NULL)
 {
 return (NULL);
 }
