@@ -51,7 +51,7 @@ i = 0;
 }
 if (l2 > 0)
 {
-while (i < n || i < l2)
+while (i < n && i < l2)
 {
 res[l1 + i] = s2[i];
 i++;
