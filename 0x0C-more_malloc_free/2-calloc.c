@@ -9,7 +9,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *n = malloc(nmemb * size);
-unsigned int i;
+unsigned int i, j = nmemb * size;
 char b = 0;
 
 if (nmemb == 0 || size == 0)
@@ -20,7 +20,7 @@ if (n == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < nmemb * size; i++)
+for (i = 0; i < j; i++)
 {
 n[i] = b;
 }
