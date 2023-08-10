@@ -17,7 +17,6 @@ return (NULL);
 }
 size = max - min + 1;
 arr = malloc(sizeof(int) * size);
-}
 if (arr == NULL)
 {
 return (NULL);
