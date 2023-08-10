@@ -28,7 +28,14 @@ while (s2 && s2[l2])
 {
 l2++;
 }
+if (n < l2)
+{
+res = malloc(sizeof(char) * (l1 + n + 1));
+}
+else
+{
 res = malloc(sizeof(char) * (l1 + l2 + 1));
+}
 if (res == NULL)
 {
 return (NULL);
