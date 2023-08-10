@@ -8,7 +8,7 @@
 */
 int *array_range(int min, int max)
 {
-int k = max - min + 1, int i;
+int i, k = max - min + 1;
 int *arr = malloc(sizeof(int) * k);
 
 if (min > max || arr == NULL)
