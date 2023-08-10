@@ -8,9 +8,9 @@
 */
 int *array_range(int min, int max)
 {
-unsigned int k = max - min + 1;
+int k = max - min + 1;
 int *arr = malloc(sizeof(int) * k);
-unsigned int i;
+int i;
 
 if (min > max || arr == NULL)
 {
