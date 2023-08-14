@@ -7,7 +7,7 @@
 *@d: input
 *Return: void
 */
-void print_dog(struct dog *d);
+void print_dog(struct dog *d)
 {
 printf("Name: %s\nAge: %d\nOwner: %s\n", dog.name, dog.age, dog.owner);
 return;
