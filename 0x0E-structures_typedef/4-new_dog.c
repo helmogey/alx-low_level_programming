@@ -16,9 +16,8 @@ int name_l = strlen(name), owner_l = strlen(owner);
 
 dog = malloc(sizeof(dog_t));
 dog->name = malloc(sizeof(char) * (name_l + 1));
-dog->age = malloc(sizeof(float));
 dog->owner = malloc(sizeof(char) * (owner_l + 1));
-if (dog == NULL || dog->name == NULL || dog->age == NULL || dog->owner == NULL)
+if (dog == NULL || dog->name == NULL || dog->owner == NULL)
 {
 return (NULL);
 }
