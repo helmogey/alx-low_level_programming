@@ -22,7 +22,7 @@ num2 = atoi(argv[3]);
 func = get_op_func(argv[2]);
 if (!func)
 {
-print("Error\n");
+printf("Error\n");
 exit(99);
 }
 opr = *argv[2];
