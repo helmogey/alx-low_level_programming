@@ -16,7 +16,7 @@ return (-1);
 }
 if (!array || !cmp)
 {
-return(-1);
+return(0);
 }
 for (i = 0; i < size; i++)
 {
