@@ -8,8 +8,7 @@
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-unsigned int i;
-int out;
+int i, out;
 
 if (size <= 0)
 {
