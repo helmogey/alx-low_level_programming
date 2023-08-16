@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
 *array_iterator - start
 *Description: 'print string'
