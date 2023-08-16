@@ -26,7 +26,7 @@ print("Error\n");
 exit(99);
 }
 opr = *argv[2];
-if ((opr == "/" || opr == "%") && num2 == 0)
+if ((opr == '/' || opr == '%') && num2 == 0)
 {
 printf("Error\n");
 exit(100);
