@@ -20,7 +20,7 @@ return;
 }
 for (i = 0; i < size; i++)
 {
-out = cpm(array[i]);
+out = cmp(array[i]);
 if (out > 0)
 {
 return (i);
