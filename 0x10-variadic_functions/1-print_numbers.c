@@ -17,7 +17,7 @@ for (i = 0; i < n; i++)
 printf("%d", va_arg(lst, int));
 if (separator != NULL)
 {
-printf("c", separator);
+printf("%s", separator);
 }
 }
 printf("\n");
