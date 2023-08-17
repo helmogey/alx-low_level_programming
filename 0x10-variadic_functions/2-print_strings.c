@@ -14,27 +14,13 @@ va_list lst;
 va_start(lst, n);
 for (i = 0; i < n - 1; i++)
 {
-if (va_arg(lst, char *) == NULL)
-{
-printf("nil");
-}
-else
-{
 printf("%s", va_arg(lst, char *));
-}
 if (separator != NULL)
 {
 printf("%s", separator);
 }
 }
-if (va_arg(lst, char *) == NULL)
-{
-printf("nil\n");
-}
-else
-{
 printf("%s\n", va_arg(lst, char *));
-}
 va_end(lst);
 return;
 }
