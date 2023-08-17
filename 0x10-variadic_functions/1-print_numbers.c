@@ -12,7 +12,7 @@ unsigned int i;
 va_list lst;
 
 va_start(lst, n);
-for (i = 0; i < n; i++)
+for (i = 0; i < n - 1; i++)
 {
 printf("%d", va_arg(lst, int));
 if (separator != NULL)
@@ -20,6 +20,6 @@ if (separator != NULL)
 printf("%s", separator);
 }
 }
-printf("\n");
+printf("%d\n", va_arg(lst, int));
 return;
 }
