@@ -21,5 +21,6 @@ printf("%s", separator);
 }
 }
 printf("%d\n", va_arg(lst, int));
+va_end(lst);
 return;
 }
