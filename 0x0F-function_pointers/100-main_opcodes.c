@@ -27,7 +27,7 @@ exit(99);
 arr = (char *)main;
 for (i = 0; i < data; i++)
 {
-if (i == bytes - 1)
+if (i == data - 1)
 {
 printf("%02hhx\n", arr[i]);
 break;
