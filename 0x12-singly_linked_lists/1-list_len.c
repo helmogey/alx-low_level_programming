@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-*print_list - start
+*list_len - start
 *Description: 'print string'
 *@h: sep
 *Return: void
