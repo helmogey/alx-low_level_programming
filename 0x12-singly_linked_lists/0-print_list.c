@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "lists.h"
 /**
 *print_list - start
 *Description: 'print string'
@@ -21,7 +21,7 @@ else
 printf("[%u] %s\n", h->len, h->str);
 }
 num++;
-h = h->next'
+h = h->next;
 }
 return (num);
 }
