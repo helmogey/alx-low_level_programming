@@ -24,7 +24,7 @@ return (NULL);
 }
 first->str = strdup(str);
 first->len = len;
-first->next = *head
+first->next = *head;
 *head = first;
 return (*head);
 }
