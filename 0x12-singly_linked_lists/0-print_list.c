@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "lists.h"
+#include "main.h"
 /**
 *print_list - start
 *Description: 'print string'
