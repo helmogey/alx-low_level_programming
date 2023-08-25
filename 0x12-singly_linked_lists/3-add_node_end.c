@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "lists.h"
 /**
 *add_node_end - start
@@ -27,8 +28,8 @@ last->len = len;
 last->next = NULL;
 for (i = 0; i < len; i++)
 {
-tmp = head->next;
+current = current->next;
 }
-tmp->next = last;
+current->next = last;
 return (last);
 }
