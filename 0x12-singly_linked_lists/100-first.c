@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "lists.h"
-void print_first(void) attribute ((constructor));
+void print_first(void)__attribute__((constructor));
 /**
 *print_first - start
 *Description: 'print string'
