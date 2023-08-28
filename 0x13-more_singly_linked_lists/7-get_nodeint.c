@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-*get_nodetint - start
+*get_nodeint_at_index - start
 *Description: 'print string'
 *@head: sep
 *@index: number
