@@ -7,15 +7,16 @@
 */
 int sum_listint(listint_t *head)
 {
+int res = 0;
+
 if (head == NULL)
 {
 return (0);
 }
-int res = 0;
-
 while (head)
 {
-res = res + (*head)->n;
+head = head->next;
+res = res + head->n;
 }
 return (res);
 }
