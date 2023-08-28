@@ -18,6 +18,11 @@ return (NULL);
 }
 last->n = n;
 last->next = NULL;
+if (*head == NULL)
+{
+*head = last;
+return (last);
+}
 while (current->next)
 {
 current = current->next;
