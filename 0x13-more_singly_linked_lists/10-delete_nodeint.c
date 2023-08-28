@@ -15,7 +15,13 @@ if (*head == NULL)
 {
 return (-1);
 }
-while (current && len < index)
+if (index == 0)
+{
+*head = (*head)->next;
+free(current);
+return (1);
+}
+while (current && len < index - 1)
 {
 len++;
 current = current->next;
