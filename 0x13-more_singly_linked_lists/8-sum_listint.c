@@ -15,8 +15,8 @@ return (0);
 }
 while (head)
 {
-head = head->next;
 res = res + head->n;
+head = head->next;
 }
 return (res);
 }
