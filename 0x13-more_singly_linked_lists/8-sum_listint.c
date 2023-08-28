@@ -15,7 +15,7 @@ int res = 0;
 
 while (head)
 {
-res = res + *(head)->n;
+res = res + (*head)->n;
 }
 return (res);
 }
