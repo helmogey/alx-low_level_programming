@@ -19,4 +19,5 @@ previous = current;
 current = nextNode;
 }
 (*head)->next = previous;
+return (*head);
 }
