@@ -1,11 +1,11 @@
 #include "lists.h"
 /**
-*print_listint_safe - start
+*find_listint_loop - start
 *Description: 'print string'
 *@head: sep
 *Return: void
 */
-size_t print_listint_safe(const listint_t *head)
+listint_t *find_listint_loop(listint_t *head)
 {
 return (1);
 }
