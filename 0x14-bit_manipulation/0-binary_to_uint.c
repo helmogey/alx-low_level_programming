@@ -17,7 +17,7 @@ while (b[len] != '\0')
 {
 if (b[len] == '0')
 {
-res = (res <<1) | 0;
+res = (res << 1) | 0;
 }
 else if (b[len] == '1')
 {
