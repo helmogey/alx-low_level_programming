@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 *binary_to_uint - start
 *Description: 'print string'
