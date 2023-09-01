@@ -11,7 +11,7 @@ unsigned long int mask = 1 << index;
 
 if (index >= 32)
 {
-return (-1)
+return (-1);
 }
 return (n & mask) > 0;
 }
