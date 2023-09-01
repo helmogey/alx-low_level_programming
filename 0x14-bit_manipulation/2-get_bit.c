@@ -1,8 +1,9 @@
 #include "main.h"
 /**
-*binary_to_uint - start
+*get_bit - start
 *Description: 'print string'
-*@b: input
+*@n: input
+*@index: index
 *Return: void
 */
 int get_bit(unsigned long int n, unsigned int index)
@@ -13,5 +14,5 @@ if (index >= 32)
 {
 return (-1);
 }
-return (n & mask) > 0;
+return ((n & mask) > 0);
 }
