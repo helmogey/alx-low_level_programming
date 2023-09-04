@@ -6,7 +6,8 @@
 *@argv: content
 *Return: void
 */
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 int file_from_descriptor, file_to_descriptor;
 char buffer[1024];
 size_t bytes_read;
