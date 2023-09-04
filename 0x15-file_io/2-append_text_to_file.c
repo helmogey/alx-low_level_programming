@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*append_text_to__file - start
+*append_text_to_file - start
 *Description: 'print string'
 *@filename: input
 *@text_content: content
