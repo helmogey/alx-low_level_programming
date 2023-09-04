@@ -40,7 +40,7 @@ exit(99);
 }
 while ((bytes_read = read(file_from_descriptor, buffer, sizeof(buffer))) > 0)
 {
-if (write(file_to_descriptor, buffer, bytes_read) != bytes_read)
+if ((unsigned int)write(file_to_descriptor, buffer, bytes_read) != bytes_read)
 {
 dprintf(2, "Error: Can't write to file %s\n", argv[2]);
 exit(99);
