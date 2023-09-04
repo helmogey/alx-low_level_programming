@@ -6,7 +6,8 @@
 *@text_content: content
 *Return: void
 */
-int append_text_to_file(const char *filename, char *text_content) {
+int append_text_to_file(const char *filename, char *text_content)
+{
 size_t bytes_written;
 int file_descriptor;
 
@@ -31,7 +32,7 @@ return (-1);
 }
 
 bytes_written = write(file_descriptor, text_content, strlen(text_content));
-if (bytes_written < 0)
+if (bytes_written <= 0)
 {
 close(file_descriptor);
 return (-1);
