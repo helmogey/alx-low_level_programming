@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  *add_dnodeint - doubly linked list
- *@heaf: input
+ *@head: input
  *@n: input
  *Description: doubly linked list node structure
  *Return: dlistint_t
@@ -12,7 +12,7 @@ dlistint_t *new_node = malloc(sizeof(dlistint_t));
 
 if (new_node == NULL)
 {
-return NULL;
+return (NULL);
 }
 new_node->n = n;
 new_node->prev = NULL;
