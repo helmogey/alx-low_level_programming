@@ -7,7 +7,7 @@
 *@out: output to be saved
 *Return: Always 0 (Success)
 */
-int _islower(char c)
+int _islower(int c)
 {
 int out;
 

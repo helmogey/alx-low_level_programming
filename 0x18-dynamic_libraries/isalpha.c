@@ -6,7 +6,7 @@
 *@out: output to be saved
 *Return: Always 0 (Success)
 */
-int _isalpha(char c)
+int _isalpha(int c)
 {
 int out;
 
