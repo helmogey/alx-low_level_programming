@@ -3,8 +3,7 @@
 /**
  * hash_table_create - function.
  * @size: size of the array.
- *
- * Return:
+ * Return: table
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
