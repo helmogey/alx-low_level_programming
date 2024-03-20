@@ -1,0 +1,9 @@
+
+
+CC = gcc
+
+all: school
+
+school: main.c
+    $(CC) -o school main.c
+
