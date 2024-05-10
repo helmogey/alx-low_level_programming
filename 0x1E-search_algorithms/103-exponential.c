@@ -10,7 +10,7 @@
 
 int exponential_search(int *array, size_t size, int value)
 {
-int i = 1, low, high, mid;
+int i = 1, low, high, mid, j;
 
 
 if (array == NULL) {
@@ -18,7 +18,7 @@ return (-1);
 }
 
 
-while (i < size && i <= size / 2)
+while (i < (int)size && i <= (int)size / 2)
 {
 i *= 2;
 }
@@ -36,7 +36,7 @@ while (i > 0)
 {
 if (array[i - 1] <= value) {
 printf("Searching subarray: [");
-for (int j = i - 1; j < size && j < i + 1; j++) {
+for (j = i - 1; j < (int)size && j < i + 1; j++) {
 printf("%d, ", array[j]);
 }
 printf("]\n");
